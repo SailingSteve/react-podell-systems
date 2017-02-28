@@ -1,0 +1,430 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"format"
+			],
+			[
+				"g",
+				"getenv"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"backgound",
+				"background-image"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"react",
+				"react-fetch"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/stevepodell/react/thinking2/public/bundle.js",
+			"settings":
+			{
+				"buffer_size": 977061,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/stevepodell/react/thinking2/webpack.config.babel.js",
+			"settings":
+			{
+				"buffer_size": 1022,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "git co",
+		"selected_items":
+		[
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"git pu",
+				"Git: Pull"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"g c",
+				"Git: Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"git",
+				"Git: Add Remote"
+			],
+			[
+				"gs",
+				"Git: Status"
+			],
+			[
+				"gi",
+				"Git: Stash"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/stevepodell/react/thinking2",
+		"/Users/stevepodell/react/thinking2/public"
+	],
+	"file_history":
+	[
+		"/Users/stevepodell/react/react-bootstrap-getting-started configed as PS, working/src/App.js",
+		"/Users/stevepodell/react/react-bootstrap-getting-started configed as PS, working/index.html",
+		"/Users/stevepodell/react/thinking-in-react/thinking.css",
+		"/Users/stevepodell/react/thinking-in-react/index.html",
+		"/Users/stevepodell/react/thinking-in-react/thinking.sublime-project",
+		"/Users/stevepodell/react/thinking-in-react/thinking.jsx",
+		"/Users/stevepodell/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/package.json",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/index.html",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/webpack.config.babel.js",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/src/App.js",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/src/HeaderNavigation.js",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/src/TopBar.js",
+		"/Users/stevepodell/Documents/Orinda Academy/Cumulus-rel-3.88/src/classes/OPP_PrimaryContact_BATCH.cls",
+		"/Users/stevepodell/react/react-bootstrap-getting-started configed as PS, working/src/HeaderNavigation.js",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/public/bundle.js",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/src/navbar.js",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/src/bundle.css",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/src/StatelessChildNav.js",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/public/bundle.js.map",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/src/statelessChildNav.js",
+		"/Users/stevepodell/react/react-bootstrap-getting-started/src/HeaderNavigationSaveOff.js",
+		"/Users/stevepodell/react/react-hello-world/package.json",
+		"/Users/stevepodell/react/react-hello-world/src/client/app/index.jsx",
+		"/Users/stevepodell/react/ps2/package.json",
+		"/Users/stevepodell/react/react-podell-systems/navbar2.jsx",
+		"/Users/stevepodell/react/react-podell-systems/index.html",
+		"/Users/stevepodell/react/react-podell-systems/main.js",
+		"/Users/stevepodell/react/react-podell-systems/indexc.html",
+		"/Users/stevepodell/react/react-podell-systems/carousel.css",
+		"/Users/stevepodell/Downloads/bootstrap-3.3.7/docs/examples/carousel/index.html",
+		"/Users/stevepodell/react/react-podell-systems/app.jsx",
+		"/Users/stevepodell/react/react-podell-systems/menu-data.js",
+		"/Users/stevepodell/react/react-podell-systems/navbar.jsx",
+		"/Users/stevepodell/react/react-podell-systems/navbarItem.jsx",
+		"/Users/stevepodell/heroku/java-getting-started/src/main/java/Main.java",
+		"/Users/stevepodell/heroku/java-getting-started/src/main/resources/spark/template/freemarker/envs.ftl",
+		"/Users/stevepodell/heroku/java-getting-started/src/main/resources/public/stylesheets/main.css",
+		"/Users/stevepodell/react/video-player/videoPlayer.css",
+		"/Users/stevepodell/heroku/java-getting-started/src/main/resources/spark/template/freemarker/index.ftl",
+		"/Users/stevepodell/react/react-podell-systems/podellSystems.css",
+		"/Users/stevepodell/heroku/java-getting-started/src/main/resources/spark/template/freemarker/header.ftl",
+		"/Users/stevepodell/react/react-podell-systems/bootExample.html",
+		"/Users/stevepodell/react/react-podell-systems/indexBlog.html",
+		"/Users/stevepodell/react/react-podell-systems/package.json",
+		"/Users/stevepodell/react/react-podell-systems/pumpkin.html",
+		"/Users/stevepodell/react/video-player/app.jsx",
+		"/Users/stevepodell/react/react-podell-systems/navbarLink.jsx",
+		"/Users/stevepodell/react/react-podell-systems/navbaritem.jsx",
+		"/Users/stevepodell/react/reactURLconsumer/README.md",
+		"/Users/stevepodell/react/reactURLconsumer/hello.jsx",
+		"/Users/stevepodell/react/reactURLconsumer/world.jsx",
+		"/Users/stevepodell/react/reactURLconsumer/picture.jsx",
+		"/Users/stevepodell/react/reactURLconsumer/index.html",
+		"/Users/stevepodell/react/reactURLconsumer/main.js",
+		"/Users/stevepodell/react/reactURLconsumer/reactURLconsumer.css",
+		"/Users/stevepodell/react/reactURLconsumer/itemLister.jsx",
+		"/Users/stevepodell/react/reactURLconsumer/OlditemLister.css",
+		"/Users/stevepodell/react/reactURLconsumer/itemLister.css",
+		"/Users/stevepodell/react/twilio/index.html",
+		"/Users/stevepodell/react/twilio/main.js",
+		"/Users/stevepodell/react/twilio/world.jsx",
+		"/Users/stevepodell/react/twilio/itemLister.css",
+		"/Users/stevepodell/react/twilio/itemLister.jsx",
+		"/Users/stevepodell/react/twilio/QuoraitemLister.jsx",
+		"/Users/stevepodell/react/twilio/webpack.config.js",
+		"/Users/stevepodell/react/twilio/package.json",
+		"/Users/stevepodell/react/twilio/hello.jsx",
+		"/Users/stevepodell/react/node-test/components/hello.jsx",
+		"/Users/stevepodell/react/node-test/components/App.js",
+		"/Users/stevepodell/react/node-test/.babelrc",
+		"/Users/stevepodell/react/node-test/components/RFetch.js",
+		"/Users/stevepodell/react/node-test/components/UserGist.js",
+		"/Users/stevepodell/react/node-test/components/Toggle.js",
+		"/Users/stevepodell/react/node-test/webpack.config.js",
+		"/Users/stevepodell/react/node-test/app/index.html",
+		"/Users/stevepodell/react/node-test/app/index.js",
+		"/Users/stevepodell/react/node-test/components/UserGist2.js",
+		"/Users/stevepodell/react/node-test/package.json",
+		"/Users/stevepodell/react/node-test/webpack.config.js."
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"navpar"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  <Navbar inverse collapseOnSelect>\n    <Navbar.Header>\n      <Navbar.Brand>\n        <a href=\"#\">React-Bootstrap</a>\n      </Navbar.Brand>\n      <Navbar.Toggle />\n    </Navbar.Header>\n    <Navbar.Collapse>\n      <Nav>\n        <NavItem eventKey={1} href=\"#\">Link</NavItem>\n        <NavItem eventKey={2} href=\"#\">Link</NavItem>\n        <NavDropdown eventKey={3} title=\"Dropdown\" id=\"basic-nav-dropdown\">\n          <MenuItem eventKey={3.1}>Action</MenuItem>\n          <MenuItem eventKey={3.2}>Another action</MenuItem>\n          <MenuItem eventKey={3.3}>Something else here</MenuItem>\n          <MenuItem divider />\n          <MenuItem eventKey={3.3}>Separated link</MenuItem>\n        </NavDropdown>\n      </Nav>\n      <Nav pullRight>\n        <NavItem eventKey={1} href=\"#\">Link Right</NavItem>\n        <NavItem eventKey={2} href=\"#\">Link Right</NavItem>\n      </Nav>\n    </Navbar.Collapse>\n  </Navbar>\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/stevepodell/react/thinking2/public/bundle.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 977061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/stevepodell/react/thinking2/webpack.config.babel.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-commit":
+	{
+		"height": 112.0
+	},
+	"output.git-init":
+	{
+		"height": 112.0
+	},
+	"output.git-pull":
+	{
+		"height": 112.0
+	},
+	"output.git-push":
+	{
+		"height": 112.0
+	},
+	"output.git-remote":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "",
+	"project": "thinking2.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/heroku/java-getting-started/pom.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 327.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

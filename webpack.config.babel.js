@@ -2,7 +2,7 @@ import webpack from 'webpack';
 import path from 'path';
 
 export default {
-  entry: './src/App.js',
+  entry: './src/PodellSystems.js',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
@@ -11,7 +11,7 @@ export default {
   module: {
     loaders: [
       // Used for compiling ES2015 JavaScript
-      { test: /\.js/, loader: 'babel' },
+      { test: /\.(js|jsx)/, loader: 'babel' },
       // Used for Bootstrap Less Source Files
       { test: /\.less/, loader: 'style!css!less' },
       // Used for Bootstrap Less Source Files

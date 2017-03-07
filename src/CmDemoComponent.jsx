@@ -4,9 +4,7 @@ import React from 'react';
 export default class ConsoleManagerComponent extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
-
- 
+    	<div>
 			<center><table style={tableStyle}>
 			<tbody>
 				<tr>
@@ -36,9 +34,6 @@ export default class ConsoleManagerComponent extends React.Component {
   }
 }
 
-const indentedStyle = {
- 	marginLeft: "100px",
-};
 
 const tableStyle = {
 	backgroundColor: "#80FFFF",

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Nav, NavItem, NavDropdown, MenuItem, Navbar, Panel } from 'react-bootstrap';
+import { Nav, NavItem, NavDropdown, MenuItem, Navbar, Panel,
+         Button } from 'react-bootstrap';
 import ConsoleManagerComponent from './ConsoleManagerComponent.jsx';
 import PrintManagerComponent from './PrintManagerComponent.jsx';
 import PcWeekComponent from './PcWeekComponent.jsx';
@@ -17,11 +18,6 @@ import Y2kComponent from './Y2kComponent.jsx';
 import DanceLike1999Component from './DanceLike1999Component.jsx';
 import CertsComponent from './CertsComponent.jsx';
 
-// https://facebook.github.io/react/docs/thinking-in-react.html
-// http://codepen.io/snakajima/pen/JbYQvL?editors=0010
-// https://react-bootstrap.github.io/components.html#navigation
-// http://stackoverflow.com/questions/42053078/getting-a-json-error-after-importing-react-bootsrap-components-into-fb-create-re/42091624#42091624
-
 
 class NavbarInstance extends React.Component {
   constructor(props) {
@@ -30,7 +26,7 @@ class NavbarInstance extends React.Component {
   }
 
   onNavSelect(eventKey) {
-    console.log(eventKey);
+    console.log('onNavSelect eventKey = ' + eventKey);
     this.props.onUserInput(eventKey);
   }
 
@@ -80,52 +76,108 @@ class NavbarInstance extends React.Component {
   }
 }
 
-const faviconStyle = {
-  maxWidth: "100%",
-  height: "auto"
-};
-
- 
 class WorkArea extends React.Component {
+  constructor(...args) {
+    super(...args);
+    this.state = {
+      open: true
+    };
+    this.onClose = this.onClose.bind(this);
+  }
+
+  onClose(eventKey) {
+    console.log('onNavSelect eventKey = ' + eventKey);
+    this.props.handleCloseButton();
+  }
+
+
   render() {
     var key = this.props.eventKey;
+    const comp = ModalContentX(key);
+    console.log('WorkArea open =  ' + this.state.open); 
 
-    switch(key) {
-      case 2.1: return(<div><ConsoleManagerComponent /></div>);
-      case 2.2: return(<div><PrintManagerComponent /></div>);
-      case 3.1: return(<div><PcWeekComponent /></div>);
-      case 3.2: return(<div><LanTimesComponent /></div>);
-      case 3.3: return(<div><CertsComponent /></div>);
-      case 4.1: return(<div><CmDemoComponent /></div>);
-      case 4.2: return(<div><CmDemoComponent /></div>);
-      case 5.1: return(<div><SchedulingComponent /></div>);
-      case 5.2: return(<div><UpdatesComponent /></div>);
-      case 5.3: return(<div><Version312Component /></div>);
-      case 5.4: return(<div><Y2kComponent /></div>);
-      case 6.1: return(<div><AboutComponent /></div>);
-      case 6.2: return(<div><HistoryComponent /></div>);
-      case 6.3: return(<div><ContractComponent /></div>);
-      case 6.4: return(<div><WeatherComponent /></div>);
-      case 6.5: return(<div><DanceLike1999Component /></div>);
-      default:  return(<div/>);
+    if(key == 0) {
+       return(<div />);
+    }
+    else {
+      return (
+        <div>
+         <Panel collapsible expanded={this.state.open} style={panelStyle}>
+          {comp}
+          </Panel>
+          <div style={centerButton}>
+            <Button onClick={this.onClose}>Close</Button>
+          </div>
+        </div>
+      );
     }
   }
 }
 
-// The filtered table, make a local handler handleUserInput, that listens for state variable changes, and responds by re-rendering the component
+const panelStyle = {
+  marginLeft: "20px",
+  marginRight: "150px",
+  paddingTop: "10px",
+  paddingRight: "5px",
+  paddingBottom: "10px",
+  paddingLeft: "5px"
+}
+
+const centerButton = {
+  textAlign: "center",
+  paddingBottom: "10px"
+}
+
+function ModalContentX(props) {
+    console.log('ModalContentX2 props = ' + props);
+
+    switch(props) {
+      case 2.1: return(<div><ConsoleManagerComponent key="cm" /></div>);
+      case 2.2: return(<div><PrintManagerComponent key="pm" /></div>);
+      case 3.1: return(<div><PcWeekComponent key="pc" /></div>);
+      case 3.2: return(<div><LanTimesComponent key="lt" /></div>);
+      case 3.3: return(<div><CertsComponent key="c"/></div>);
+      case 4.1: return(<div><CmDemoComponent key="cd1" /></div>);
+      case 4.2: return(<div><CmDemoComponent key="cd2" /></div>);
+      case 5.1: return(<div><SchedulingComponent key="s" /></div>);
+      case 5.2: return(<div><UpdatesComponent key="u" /></div>);
+      case 5.3: return(<div><Version312Component key="v312" /></div>);
+      case 5.4: return(<div><Y2kComponent key="y2k" /></div>);
+      case 6.1: return(<div><AboutComponent key="a" /></div>);
+      case 6.2: return(<div><HistoryComponent key="h" /></div>);
+      case 6.3: return(<div><ContractComponent key="con" /></div>);
+      case 6.4: return(<div><WeatherComponent  key="2"/></div>);
+      case 6.5: return(<div><DanceLike1999Component  key="1999"/></div>);
+      default:  return(<div  key="def">default</div>);
+    }
+ }
+
+// The filtered table, make a local handler handleNavbarSelection, that listens for state variable changes, and responds by re-rendering the component
 class  PodellSystemsPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      eventKey: ''
+      eventKey: 0.0,
+      showPanel: false
     };
     
-    this.handleUserInput = this.handleUserInput.bind(this);
+    this.handleNavbarSelection = this.handleNavbarSelection.bind(this);
+    this.handleCloseButton     = this.handleCloseButton.bind(this);
   }
 
-  handleUserInput(eventKey) {
+  handleNavbarSelection(eventKey) {
+    console.log('handleNavbarSelection eventKey = ' + eventKey);
+    var sp = ( eventKey > 0 );
     this.setState({
-      eventKey: eventKey
+        eventKey: eventKey,
+        showPanel: sp
+    });
+   }
+
+  handleCloseButton() {
+    this.setState({
+      eventKey: 0.0,
+      showPanel: false
     });
   }
 
@@ -133,18 +185,22 @@ class  PodellSystemsPage extends React.Component {
     return (
       <div>
         <header>
-           <NavbarInstance onUserInput={this.handleUserInput} />
+           <NavbarInstance onUserInput={this.handleNavbarSelection} />
         </header>
-        <WorkArea eventKey={this.state.eventKey} />
+        <WorkArea eventKey={this.state.eventKey} showPanel={this.state.showPanel} handleCloseButton={this.handleCloseButton} />
         <div id="pageContent" ></div>    
     </div>
      );
   }
 }
 
-
-
 ReactDOM.render(
   < PodellSystemsPage  />,
   document.getElementById('container')
 );
+
+const faviconStyle = {
+  maxWidth: "100%",
+  height: "auto"
+};
+

@@ -3,7 +3,7 @@ import React from 'react';
 export default class Y2kComponent extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
+    	<div>
 			<h1><img src="./images/logo.gif" align="BOTTOM"/></h1>
 			<h2>Podell Systems, Year 2000 Compliance Statement:</h2>
 			<br/>&nbsp;
@@ -41,10 +41,6 @@ export default class Y2kComponent extends React.Component {
     );
   }
 }
-
-const indentedStyle = {
- 	marginLeft: "100px",
-};
 
 const tableStyle = {
 	marginLeft: "300px",

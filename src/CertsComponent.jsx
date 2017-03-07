@@ -3,7 +3,7 @@ import React from 'react';
 export default class CertsComponent extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
+    	<div>
     		<h2><img src="./images/logo.gif"> Podell Systems, Inc.</img> has partnered with <img src="./images/Novell.jpg" /></h2>
     		<br/>
     		<h3>
@@ -17,8 +17,4 @@ export default class CertsComponent extends React.Component {
     );
   }
 }
-
-const indentedStyle = {
- 	marginLeft: "100px",
-};
 

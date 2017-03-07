@@ -3,7 +3,7 @@ import React from 'react';
 export default class UpdatesComponent extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
+    	<div>
 			<h1>Updates to Console Manager</h1>
 			<h2 align="LEFT"><strong><b>Upgrades</b></strong></h2>
 			<table style={tableStyle}>
@@ -51,10 +51,6 @@ export default class UpdatesComponent extends React.Component {
 		</div>
     );
   }
-}
-
-const indentedStyle = {
- 	marginLeft: "100px"
 }
 
 const emailStyle = {

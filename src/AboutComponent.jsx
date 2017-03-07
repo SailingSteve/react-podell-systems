@@ -3,8 +3,7 @@ import React from 'react';
 export default class AboutComponent extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
-
+    	<div>
 			<h1>About Podell Systems</h1>
 			<h2><img src="./images/logo.gif"> Podell Systems, Inc.</img></h2>
 			<dl>
@@ -46,10 +45,6 @@ export default class AboutComponent extends React.Component {
 		</div>
     );
   }
-}
-
-const indentedStyle = {
- 	marginLeft: "100px"
 }
 
 const emailStyle = {

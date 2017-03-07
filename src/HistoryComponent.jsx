@@ -3,8 +3,7 @@ import React from 'react';
 export default class HistoryComponent extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
-
+    	<div>
 			<h1>The History of Podell Systems</h1>
 			 
 			<p><img src="./images/logo.gif"/></p>
@@ -108,15 +107,11 @@ export default class HistoryComponent extends React.Component {
 			where all Marketing, Sales, Engineering, and Support efforts are centralized.</p>
 			<br/>
 			<br/>
-			After a long good run, with the dot com bust coming on strong in 2001, Podell Systems ceased operations in an orderly way.
+			After a long good run, with the decline of NetWare and the dot com implosion looming in 2001, Podell Systems ceased operations in an orderly way.
 	 		<br/><br/>
 		</div>
     );
   }
 }
 
-const indentedStyle = {
- 	marginLeft:  "100px",
- 	marginRight: "100px",
-}
 

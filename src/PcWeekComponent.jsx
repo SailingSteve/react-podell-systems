@@ -4,7 +4,7 @@ import React from 'react';
 export default class ConsoleManagerComponent extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
+    	<div>
 			<h4><img src="./images/pcweek.gif" align="BOTTOM"/> March18, 1996 - page N11</h4>
 			<h4>Lab Note</h4>
 			<h2>Utility provides door to NetWare</h2>
@@ -40,7 +40,3 @@ export default class ConsoleManagerComponent extends React.Component {
     );
   }
 }
-
-const indentedStyle = {
- 	marginLeft: "100px",
-};

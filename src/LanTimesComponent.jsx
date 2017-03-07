@@ -4,7 +4,7 @@ import React from 'react';
 export default class LanTimesComponent extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
+    	<div >
     		<center><p><img src="./images/LanTimesLogo.gif"/></p></center>
    			<h1 id="firstHeading" class="firstHeading" lang="en"><i>LAN Times</i></h1>
 			<div id="siteSub">From Wikipedia, the free encyclopedia</div>
@@ -17,7 +17,3 @@ export default class LanTimesComponent extends React.Component {
     );
   }
 }
-
-const indentedStyle = {
- 	marginLeft: "100px",
-};

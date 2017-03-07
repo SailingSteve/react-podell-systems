@@ -3,7 +3,7 @@ import React from 'react';
 export default class Version312Component extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
+    	<div>
     		<h2>Warning to NetWare 3.12 users who have loaded 312PT9&#58;</h2>
 
 			<p>Within 312PT9 is a patch NLM named EAWRNFX.NLM that has a serious bug.
@@ -64,11 +64,9 @@ export default class Version312Component extends React.Component {
   }
 }
 
-const indentedStyle = {
- 	marginLeft: "100px"
-}
-
 const emailStyle = {
 	fontFamily: "Times New Roman",
-	fontSize: "18px"
+	fontSize: "18px",
+	marginLeft: "100px"
+
 }

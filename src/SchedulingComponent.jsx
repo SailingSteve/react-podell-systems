@@ -4,9 +4,8 @@ import React from 'react';
 export default class ConsoleManagerComponent extends React.Component {
   render() {
     return (
-    	<div style={indentedStyle}>
-
-			<h2 align="CENTER"><img src="./images/logo.gif" height="107" width="87" align="CENTER"/>Easy to use Scheduling for Novell Servers</h2>
+    	<div>
+			<h2 align="CENTER"><img src="./images/logo.gif" height="107" width="87" align="CENTER"/>&nbsp;&nbsp;Easy to use Scheduling for Novell Servers</h2>
 
 			<p>On Novell NetWare networks, there are certain administrative jobs that require manual intervention by an operator, often at late night when the users are not present. There are other simple jobs that need to be consistently executed on a daily or weekly basis that are good candidates for automation. Console Manager for NetWare provides the automation capability necessary to do these jobs. Console Manager, is a Novell Labs certified "Tested and Approved" NLM, that runs on the Novell file server console. Console Manager provides many significant, otherwise unavailable, utilities all combined in a familiar and consistent user interface. Console Manager is  a general purpose file manager that allows files to be manipulated and copied between volumes, servers, and the DOS boot-up partition. Console Manager also provides a large collection of NetWare server oriented integrated management features. Console Manager's automation capability resides in it's "Scheduled Commands" feature. NetWare batch files (NCF files) and individual NetWare 3.x/4.x console commands can be scheduled to beexecuted at any future time. Scheduled commands can be executed periodically: Daily, Weekly, Monthly, etc. or can be scheduled to execute once at some future time. In addition to loading and unloading NLMs (NetWare Loadable Modules), and the other native commands available at the NetWare file server, Console Manager extends the console command line interface with five additional commands:</p>
 			<ul>
@@ -19,8 +18,11 @@ export default class ConsoleManagerComponent extends React.Component {
 
 			<p>Most importantly the Console Manager scheduling feature is very simple to use. There is no new complex scripting language to learn. Any feature in any NLM, including the features of Console Manager itself, can be automated.</p>
 
-			<center><p><a href="./images/scdllg.gif"><img src="./images/scdl.gif" height="70" width="90" align="BOTTOM"/></a>
-			Click on picture for better view </p></center>
+			<center>
+				<p><a href="./images/scdllg.gif"><img src="./images/scdl.gif" height="70" width="90" align="BOTTOM"/></a>
+					&nbsp;Click on picture for better view 
+				</p>
+			</center>
 
 			<p>This screen capture shows the entry form filled in for automatically unloading Btrieve at a certain time each week -- that is all there is to it. Console Manager whenever possible uses the same keystrokes that the Microsoft Windows uses, so most new users never need to look at the users manual.</p>
 
@@ -60,15 +62,10 @@ export default class ConsoleManagerComponent extends React.Component {
 			R&amp;D departments: Console Manager has been used at Novell to help test their recent new products and as a result has been certified on NetWare
 			3.x, NetWare 4.1, InterNetWare 4.11. We are currently hard at work on customer requested new features for Console Manager, and on other products in our
 			evolving family of network tools.</p>
-
 		</div>
     );
   }
 }
-
-const indentedStyle = {
- 	marginLeft: "100px",
-};
 
 
 

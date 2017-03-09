@@ -18,10 +18,10 @@ export default class UpdatesComponent extends React.Component {
 					</tr>
 				</tbody>
 			</table>
-			<p><a href="http://www.podell.com/podell/about.htm">Call or Email Us for
-			Upgrades</a></p>
 			<br/>
-			<h2><a href="http://www.podell.com/podell/v210.htm">What's New in 2.10</a></h2>
+			<p>Call or Email Us for Upgrades</p>
+			<br/>
+			<h2>What&apos;s New in 2.10</h2>
 			<h2>Fixes in Version 2.00c:</h2>
 
 			<ol>
@@ -56,7 +56,7 @@ export default class UpdatesComponent extends React.Component {
 const emailStyle = {
 	fontFamily: "Times New Roman",
 	fontSize: "18px"
-}
+};
 
 const tableStyle = {
 	marginLeft: "200px",

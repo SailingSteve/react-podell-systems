@@ -3,12 +3,12 @@ import React from 'react';
 export default class HistoryComponent extends React.Component {
   render() {
     return (
-    	<div>
+    	<div style={{marginLeft: "10px", fontSize: "18px"}}>
 			<h1>The History of Podell Systems</h1>
 			 
 			<p><img src="./images/logo.gif"/></p>
 			
-
+			<br/>
 			<p>Podell Systems is dedicated to finding and resolving poorly addressed
 			network administrative problems and working to make LAN administrators
 			and network Engineers more productive through the creation of superior
@@ -107,8 +107,7 @@ export default class HistoryComponent extends React.Component {
 			where all Marketing, Sales, Engineering, and Support efforts are centralized.</p>
 			<br/>
 			<br/>
-			After a long good run, with the decline of NetWare and the dot com implosion looming in 2001, Podell Systems ceased operations in an orderly way.
-	 		<br/><br/>
+			<b>After a long good run, with the decline of NetWare and the dot com implosion looming in 2001, Podell Systems ceased operations in an orderly way.</b>
 		</div>
     );
   }

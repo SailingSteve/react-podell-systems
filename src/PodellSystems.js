@@ -17,6 +17,7 @@ import ContractComponent from './ContractComponent.jsx';
 import Y2kComponent from './Y2kComponent.jsx';
 import DanceLike1999Component from './DanceLike1999Component.jsx';
 import CertsComponent from './CertsComponent.jsx';
+import V210Component from './V210Component.jsx';
 
 
 class NavbarInstance extends React.Component {
@@ -35,7 +36,7 @@ class NavbarInstance extends React.Component {
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand pullLeft>
-             &nbsp;&nbsp; <a href="http://podell.com/podellsystems/">Podell Systems</a>
+             &nbsp;&nbsp; <a href="http://podell.com/podellsystems/">Podell Systems</a> 
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -43,7 +44,8 @@ class NavbarInstance extends React.Component {
           <Nav>
              <NavDropdown eventKey={2} title="Products" id="basic-nav-dropdown">
                <MenuItem eventKey={2.1} onSelect={this.onNavSelect}>Console Manager for NetWare</MenuItem>
-               <MenuItem eventKey={2.2} onSelect={this.onNavSelect}>Print Manager for Netware</MenuItem>
+               <MenuItem eventKey={2.2} onSelect={this.onNavSelect}>&nbsp;&nbsp;Console Manager V2.10</MenuItem>
+               <MenuItem eventKey={2.3} onSelect={this.onNavSelect}>Print Manager for Netware</MenuItem>
               </NavDropdown>
              <NavDropdown eventKey={3} title="Reviews" id="basic-nav-dropdown">
                <MenuItem eventKey={3.1} onSelect={this.onNavSelect}>PC Week review of Console Manager</MenuItem>
@@ -116,7 +118,7 @@ class WorkArea extends React.Component {
 
 const panelStyle = {
   marginLeft: "20px",
-  marginRight: "150px",
+  marginRight: "20px",
   paddingTop: "10px",
   paddingRight: "5px",
   paddingBottom: "10px",
@@ -133,7 +135,8 @@ function ModalContentX(props) {
 
     switch(props) {
       case 2.1: return(<div><ConsoleManagerComponent key="cm" /></div>);
-      case 2.2: return(<div><PrintManagerComponent key="pm" /></div>);
+      case 2.2: return(<div><V210Component key="v2" /></div>);
+      case 2.3: return(<div><PrintManagerComponent key="pm" /></div>);
       case 3.1: return(<div><PcWeekComponent key="pc" /></div>);
       case 3.2: return(<div><LanTimesComponent key="lt" /></div>);
       case 3.3: return(<div><CertsComponent key="c"/></div>);

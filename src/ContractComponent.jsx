@@ -3,7 +3,7 @@ import React from 'react';
 export default class ContractComponent extends React.Component {
   render() {
     return (
-    	<div>
+    	<div style={{marginLeft: "10px", fontSize: "18px"}}>
         <h1>Podell Systems Software Contracting Services</h1>
 
         <p>Podell systems offers off site contract programming</p>
@@ -32,7 +32,7 @@ export default class ContractComponent extends React.Component {
             <tbody>
               <tr>
                 <td style={cellStyle}>
-                  We deliver projects on time, and at a reasonable and fixed price.
+                  We deliver projects on time, and for a reasonable and fixed price.
                 </td>
               </tr>
             </tbody>
@@ -49,14 +49,14 @@ export default class ContractComponent extends React.Component {
 
 const tableStyle = {
 	marginLeft: "200px",
-	backgroundColor: "#80FFFF",
+  backgroundColor: "#F5DEB3",
 	border: "1px solid black",
 	fontSize: "30px",
 	padding: "15px"
 };
 
 const cellStyle = {
-	backgroundColor: "#80FFFF",
+  backgroundColor: "#F5DEB3",
 	border: "1px solid black",
 	fontSize: "30px",
 	padding: "15px"

@@ -34,7 +34,7 @@ export default class WeatherComponent extends React.Component {
 
   	var knots = parseFloat(Math.round(this.state.data.wind_mph * 1.15078 * 100) / 100).toFixed(2);
   	return (
-		<div>
+		<div style={{marginLeft: "10px", fontSize: "18px"}}>
 			<h1>Weather</h1>
 			<br/>
 			<div style={indentedStyle}>	

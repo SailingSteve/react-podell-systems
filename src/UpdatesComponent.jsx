@@ -3,7 +3,7 @@ import React from 'react';
 export default class UpdatesComponent extends React.Component {
   render() {
     return (
-    	<div>
+    	<div style={{marginLeft: "10px", fontSize: "18px"}}>
 			<h1>Updates to Console Manager</h1>
 			<h2 align="LEFT"><strong><b>Upgrades</b></strong></h2>
 			<table style={tableStyle}>
@@ -60,14 +60,14 @@ const emailStyle = {
 
 const tableStyle = {
 	marginLeft: "200px",
-	backgroundColor: "#80FFFF",
+	backgroundColor: "#F5DEB3",
 	border: "1px solid black",
 	fontSize: "30px",
 	padding: "15px"
 };
 
 const cellStyle = {
-	backgroundColor: "#80FFFF",
+	backgroundColor: "#F5DEB3",
 	border: "1px solid black",
 	fontSize: "30px",
 	padding: "15px"

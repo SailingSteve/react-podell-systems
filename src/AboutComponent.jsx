@@ -3,7 +3,7 @@ import React from 'react';
 export default class AboutComponent extends React.Component {
   render() {
     return (
-    	<div>
+    	<div style={{marginLeft: "10px", fontSize: "18px"}}>
 			<h1>About Podell Systems</h1>
 			<h2><img src="./images/logo.gif"> Podell Systems, Inc.</img></h2>
 			<dl>

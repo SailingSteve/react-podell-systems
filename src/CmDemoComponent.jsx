@@ -4,7 +4,7 @@ import React from 'react';
 export default class ConsoleManagerComponent extends React.Component {
   render() {
     return (
-    	<div>
+    	<div style={{marginLeft: "10px", fontSize: "18px"}}>
 			<center><table style={tableStyle}>
 			<tbody>
 				<tr>
@@ -36,7 +36,7 @@ export default class ConsoleManagerComponent extends React.Component {
 
 
 const tableStyle = {
-	backgroundColor: "#80FFFF",
+	backgroundColor: "#F5DEB3",
 	border: "1px solid black",
 	fontSize: "30px"
 };

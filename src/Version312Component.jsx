@@ -3,7 +3,7 @@ import React from 'react';
 export default class Version312Component extends React.Component {
   render() {
     return (
-    	<div>
+    	<div style={{marginLeft: "10px", fontSize: "18px"}}>
     		<h2>Warning to NetWare 3.12 users who have loaded 312PT9&#58;</h2>
 
 			<p>Within 312PT9 is a patch NLM named EAWRNFX.NLM that has a serious bug.
@@ -18,12 +18,13 @@ export default class Version312Component extends React.Component {
 			the command lines for these commands can get very long.</p>
 
 			<p>Until there is a released 312pt9, we will make the updated NLM available here.</p>
-
-			<center>
+			<br/>
+			<div style={{marginLeft: "100px"}}>
 				<h3>Updated patch NLM&nbsp;&nbsp;
-					<a href="http://www.hooked.net/podell/EAWRNFX.ZIP">EAWRNFX.ZIP</a>
+					<a href="./images/EAWRNFX.ZIP">EAWRNFX.ZIP</a>
 				</h3>
-			</center>
+			</div>
+			<br/><br/>
 
 			<div style={emailStyle}>
 				<p>
@@ -55,6 +56,7 @@ export default class Version312Component extends React.Component {
 				Novell Developer Support</p>
 			</div>
 			<p/>
+			<br/>
 
 			<p>Note from Podell Systems: We have tested the NLM and responded to Rex Kuhn. The updated NLM should be in the next 312PTx.</p>
 
@@ -66,7 +68,7 @@ export default class Version312Component extends React.Component {
 
 const emailStyle = {
 	fontFamily: "Times New Roman",
-	fontSize: "18px",
+	fontSize: "20px",
 	marginLeft: "100px"
 
 }

@@ -3,7 +3,7 @@ import React from 'react';
 export default class Y2kComponent extends React.Component {
   render() {
     return (
-    	<div>
+    	<div style={{marginLeft: "10px", fontSize: "18px"}}>
 			<h1><img src="./images/logo.gif" align="BOTTOM"/></h1>
 			<h2>Podell Systems, Year 2000 Compliance Statement:</h2>
 			<br/>&nbsp;

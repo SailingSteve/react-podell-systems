@@ -12,6 +12,10 @@ html {
 
 }
 
+div {
+	fontSize: 18px;
+}
+
 
 body { 
     min-height:100%;
@@ -25,4 +29,16 @@ a.indentedImage {
 	margin-left: 100px;
 }
 
-/
+div.big-image-modal {
+    min-width: 780px;
+}
+
+
+/*
+.modal-container {
+	position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+	position: absolute;
+}
+*/

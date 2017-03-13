@@ -42,7 +42,7 @@ export default class ConsoleManagerComponent extends React.Component {
           		    </tr>
           		    <tr>
             		  <td style={cellStyle}>
-            		    <BigImageModal source="../images/mnlgscrn.gif" label="enlarge" title="Main Screen" />
+            		    <BigImageModal source="./images/mnlgscrn.gif" label="enlarge" title="Main Screen" />
             		  </td>
             		  <td style={cellStyle}>
             		  </td>
